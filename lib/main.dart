@@ -10,14 +10,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Home(),
     );
   }
 }
 
 class Home extends StatefulWidget {
-  Home({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
@@ -26,11 +26,12 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: 
-        Text('First ios app test',style: TextStyle(fontWeight: FontWeight.bold),)
-        ,
+        child: Text(
+          'First ios app test 2',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
